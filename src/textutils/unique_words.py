@@ -1,6 +1,5 @@
 def unique_words(text):
-    #have to add "delete anything that's not a word character or whitespace"
-
-    words = text.lower().split()
-
-    return sorted(set(words))
+    import re
+    words = re.findall(r'\b\w+\b', text.lower())
+    unique_words = sorted(set(words))
+    return unique_words
