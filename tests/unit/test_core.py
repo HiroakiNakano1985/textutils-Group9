@@ -14,3 +14,9 @@ def test_word_count_extra_spaces():
     text = "hi   hi    hi\nhi"
     result = core.word_count(text)
     assert result == {"hi": 4}
+
+
+def test_unique_words():
+    text = "I am studying Spanish from last month."
+    result = core.unique_words(text)
+    assert result == ["am", "from", "i", "last", "month", "spanish", "studying"]
