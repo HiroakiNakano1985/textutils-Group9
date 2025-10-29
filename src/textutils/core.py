@@ -27,6 +27,7 @@ def remove_punctuation(text):
     translator = str.maketrans('', '', string.punctuation)
     return text.translate(translator)
 
+<<<<<<< HEAD
 
 def normalize_whitespace(text: str) -> str:
     return re.sub(r"\s+", " ", text).strip()
@@ -48,3 +49,12 @@ def word_lengths(text: str) -> Dict[str, int]:
         if lw:                      # skip tokens that become empty
             out[lw] = len(lw)
     return out
+=======
+def count_vowels(text: str) -> int:
+    vowels = "aeiouAEIOU"
+    count = 0
+    for char in text:
+        if char in vowels:
+            count += 1
+    return count
+>>>>>>> main

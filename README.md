@@ -40,8 +40,8 @@ pytest --cov=src/textutils --cov-report=term-missing
 * `unique_words(text)` → returns a sorted list of distinct words (case-insensitive)
 * `word_count(text)` → case-insentive counts
 * `remove_punctuation(text)` → strip punctuation while keeping spaces and letters
+* `count_vowels(text)` → count vowels in the given text
 * `will complete later` → collapses multiple spaces/newlines into one
-* `normalize_whitespace(text)` → collapses multiple spaces/newlines into one
 
 ## Team
 
