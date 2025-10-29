@@ -60,4 +60,3 @@ def test_word_lengths_mixed_case():
     result = core.word_lengths(text)
     # Case-insensitive: both "Hello" and "hELLo" count as the same word length
     assert result == {"hello": 5, "world": 5}
-
