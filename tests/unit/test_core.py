@@ -43,7 +43,7 @@ def test_remove_punctuation_numbers():
     result = core.remove_punctuation(text)
     assert result == "Wow 123"
 
-<<<<<<< HEAD
+
 def test_word_lengths_basic():
     text = "hello world"
     result = core.word_lengths(text)
@@ -61,7 +61,7 @@ def test_word_lengths_mixed_case():
     result = core.word_lengths(text)
     # Case-insensitive: both "Hello" and "hELLo" count as the same word length
     assert result == {"hello": 5, "world": 5}
-=======
+
 ##Adding test for count_vowels 
 
 def test_count_vowels_basic():
@@ -83,4 +83,4 @@ def test_count_vowels_no_vowels():
 def test_count_vowels_empty_string():
     text = ""
     assert core.count_vowels(text) == 0   
->>>>>>> main
+
