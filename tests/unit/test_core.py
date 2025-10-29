@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import textutils.core as c
 
 def test_count_vowels_basic():
