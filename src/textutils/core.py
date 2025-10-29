@@ -21,3 +21,11 @@ def remove_punctuation(text):
     
     translator = str.maketrans('', '', string.punctuation)
     return text.translate(translator)
+
+def count_vowels(text: str) -> int:
+    vowels = "aeiouAEIOU"
+    count = 0
+    for char in text:
+        if char in vowels:
+            count += 1
+    return count

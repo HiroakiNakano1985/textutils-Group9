@@ -42,3 +42,25 @@ def test_remove_punctuation_numbers():
     text = "Wow, 123!!!"
     result = core.remove_punctuation(text)
     assert result == "Wow 123"
+
+##Adding test for count_vowels 
+
+def test_count_vowels_basic():
+    text = "Hello"
+    assert core.count_vowels(text) == 2
+
+def test_count_vowels_multiple_words():
+    text = "Hello professor, how are you?"
+    assert core.count_vowels(text) == 10
+
+def test_count_vowels_capital_vowels():
+    text = "AAAY CARAMBAAA, please help me!"
+    assert core.count_vowels(text) == 13
+
+def test_count_vowels_no_vowels():
+    text = "rhythm"
+    assert core.count_vowels(text) == 0
+
+def test_count_vowels_empty_string():
+    text = ""
+    assert core.count_vowels(text) == 0   
