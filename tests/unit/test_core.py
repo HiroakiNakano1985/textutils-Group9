@@ -42,3 +42,22 @@ def test_remove_punctuation_numbers():
     text = "Wow, 123!!!"
     result = core.remove_punctuation(text)
     assert result == "Wow 123"
+
+def test_word_lengths_basic():
+    text = "hello world"
+    result = core.word_lengths(text)
+    assert result == {"hello": 5, "world": 5}
+
+
+def test_word_lengths_empty_string():
+    text = ""
+    result = core.word_lengths(text)
+    assert result == {}
+
+
+def test_word_lengths_mixed_case():
+    text = "Hello hELLo world"
+    result = core.word_lengths(text)
+    # Case-insensitive: both "Hello" and "hELLo" count as the same word length
+    assert result == {"hello": 5, "world": 5}
+
