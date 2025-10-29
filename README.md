@@ -1,27 +1,25 @@
-# textutils-Group9>
+# textutils-Group9
  A small collaborative Python package that provides simple text utilities.
 
 ## Installation
 
 1. Clone the repository:
-   ```bash
-   git clone https://github.com/HiroakiNakano1985/textutils-9.git
-   cd textutils-9
+```bash
+git clone https://github.com/HiroakiNakano1985/textutils-9.git
+cd textutils-9
 ```
 
-
 2. Create the environment (with micromamba):
-
-   ```bash
-   micromamba create -f environment.yml -y
-   micromamba activate textutils
-   ```
+```bash
+micromamba create -f environment.yml -y
+micromamba activate textutils
+```
 
 3. Install the package in editable mode:
 
-   ```bash
-   pip install -e .
-   ```
+```bash
+pip install -e .
+```
 
 ## Running Tests
 
