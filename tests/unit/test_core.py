@@ -15,8 +15,6 @@ def test_word_lengths():
     result = core.word_count(text)
     assert result == {"hi": 4}
 
-def test_count_vowels():
-    
 
 
 def test_unique_words():
