@@ -4,7 +4,6 @@ import string
 from typing import Dict
 
 def unique_words(text):
-    import re
     words = re.findall(r'\b\w+\b', text.lower())
     unique_words = sorted(set(words))
     return unique_words
@@ -17,10 +16,6 @@ def word_count(text: str) -> dict[str, int]:
         counts[word] = counts.get(word, 0) + 1
 
     return counts
-
-
-
-import string
 
 def remove_punctuation(text):
     
