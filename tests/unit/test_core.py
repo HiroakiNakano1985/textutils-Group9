@@ -17,13 +17,15 @@ def test_word_count_extra_spaces():
 
 
 
-def test_unique_words():
+def test_unique_words_basic():
     text = "I am studying Spanish from last month."
     result = core.unique_words(text)
     assert result == ["am", "from", "i", "last", "month", "spanish" , "studying"]
     
-    
-    
+def test_unique_words_advance():
+    text = "Hi! I came to Barcelona yesterday."
+    result = core.unique_words(text)
+    assert result == ["barcelona", "came", "hi", "i", "to", "yesterday"]    
 
 def test_remove_punctuation_basic():
     from textutils import core
