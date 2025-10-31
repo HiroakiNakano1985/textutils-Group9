@@ -86,3 +86,20 @@ def test_count_vowels_empty_string():
     text = ""
     assert core.count_vowels(text) == 0   
 
+
+
+# Test for reverse_words
+
+def test_reverse_words_basic():
+    text = "one two three"
+    assert core.reverse_words(text) == "three two one"
+
+
+def test_reverse_words_handles_extra_spaces():
+    text = "  hello   world  "
+    assert core.reverse_words(text) == "world hello"
+
+
+def test_reverse_words_single_word():
+    text = "banana"
+    assert core.reverse_words(text) == "banana"
