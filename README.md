@@ -43,6 +43,7 @@ pytest --cov=src/textutils --cov-report=term-missing
 * `normalize_whitespace(text)` → collapse runs of whitespace, trim ends
 * `word_lengths(text)` → return a direct mapping words to their lengths
 * `count_vowels(text)` → count vowels in the given text
+* `reverse_words(text)` → reverse the order of words, not charactors
 
 
 ## Team
