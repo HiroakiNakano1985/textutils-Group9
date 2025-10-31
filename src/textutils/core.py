@@ -52,3 +52,19 @@ def count_vowels(text: str) -> int:
             count += 1
     return count
 
+
+# Code for reverse_words
+def reverse_words(text: str) -> str:
+    """
+    Reverse the order of words in a given text.
+    Words are separated by any whitespace.
+    Extra spaces are ignored.
+    """
+    # Split by any whitespace, remove empties
+    words = text.split()
+
+    # Reverse the list of words
+    reversed_words = words[::-1]
+
+    # Join them back into a single space-separated string
+    return " ".join(reversed_words)
