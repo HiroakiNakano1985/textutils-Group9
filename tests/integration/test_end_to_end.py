@@ -1,6 +1,7 @@
 import textutils.core as core
 
 #I don't still understand how each function works. Therefore, result is empty now.
+#We need to add a test for reverse_words fundtion
 
 def test_word_lengths_pipeline():
     text = "Hello,   world!\t My name is   Hiroaki Nakano \n We are all friends!!"
