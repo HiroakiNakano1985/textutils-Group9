@@ -1,4 +1,5 @@
 # textutils-Group9
+![Python](https://img.shields.io/badge/python-3.11-blue)  
  A small collaborative Python package that provides simple text utilities.
 
 ## Installation
