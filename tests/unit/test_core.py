@@ -1,5 +1,6 @@
 import textutils.core as core
 
+# test for word count
 def test_word_count_basic():
     text = "Red red BLUE"
     result = core.word_count(text)
@@ -15,7 +16,7 @@ def test_word_count_extra_spaces():
     result = core.word_count(text)
     assert result == {"hi": 4}
 
-
+#test for unique words
 
 def test_unique_words_basic():
     text = "I am studying Spanish from last month."
@@ -26,6 +27,8 @@ def test_unique_words_advance():
     text = "Hi! I came to Barcelona yesterday."
     result = core.unique_words(text)
     assert result == ["barcelona", "came", "hi", "i", "to", "yesterday"]    
+
+#test for remove punctuation
 
 def test_remove_punctuation_basic():
     from textutils import core
@@ -45,6 +48,7 @@ def test_remove_punctuation_numbers():
     result = core.remove_punctuation(text)
     assert result == "Wow 123"
 
+# test for word lengths
 
 def test_word_lengths_basic():
     text = "hello world"
@@ -64,7 +68,7 @@ def test_word_lengths_mixed_case():
     # Case-insensitive: both "Hello" and "hELLo" count as the same word length
     assert result == {"hello": 5, "world": 5}
 
-##Adding test for count_vowels 
+## test for count_vowels 
 
 def test_count_vowels_basic():
     text = "Hello"
@@ -87,9 +91,7 @@ def test_count_vowels_empty_string():
     assert core.count_vowels(text) == 0   
 
 
-
-# Test for reverse_words
-
+# test for reverse words
 def test_reverse_words_basic():
     text = "one two three"
     assert core.reverse_words(text) == "three two one"

@@ -3,11 +3,13 @@ import re
 import string
 from typing import Dict
 
+#coding for unique words
 def unique_words(text):
     words = re.findall(r'\b\w+\b', text.lower())
     unique_words = sorted(set(words))
     return unique_words
 
+#code for word count
 def word_count(text: str) -> dict[str, int]:
 
     counts: dict[str, int] = {}
@@ -17,15 +19,17 @@ def word_count(text: str) -> dict[str, int]:
 
     return counts
 
+#code for remove punctuation
 def remove_punctuation(text):
     
     translator = str.maketrans('', '', string.punctuation)
     return text.translate(translator)
 
-
+#coding for normalize whitespace
 def normalize_whitespace(text: str) -> str:
     return re.sub(r"\s+", " ", text).strip()
 
+#coding for word lengths
 def word_lengths(text: str) -> Dict[str, int]:
     """
     Return {word_lowercase: length} for each distinct word (case-insensitive).
@@ -44,6 +48,7 @@ def word_lengths(text: str) -> Dict[str, int]:
             out[lw] = len(lw)
     return out
 
+#coding for count vowels
 def count_vowels(text: str) -> int:
     vowels = "aeiouAEIOU"
     count = 0
