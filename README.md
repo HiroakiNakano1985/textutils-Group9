@@ -12,7 +12,7 @@ cd textutils-Group9
 
 2. Create the environment (with micromamba):
 ```bash
-micromamba create -f environmentMAC.yml -y
+micromamba create -f environment.yml -y
 micromamba activate textutils
 ```
 
