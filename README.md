@@ -49,8 +49,8 @@ pytest --cov=src/textutils --cov-report=term-missing
 
 ## Team
 
-HiroakiNakano1985  
-engpongtanya-16  
-leomatthey  
-maryemeidiata  
-MateoBarredaR  
+Hiroaki Nakano (HiroakiNakano1985)  
+Eng Pongtanya (engpongtanya-16)  
+Leo Matthey (leomatthey)  
+Maryeme Idiata (maryemeidiata)  
+Mateo Barreda Riveros (MateoBarredaR)  
